@@ -8,7 +8,7 @@ Group:		Games/Strategy
 License:	GPLv2
 URL:		http://7kfans.com/
 Source0:	http://sourceforge.net/projects/skfans/files/Seven%20Kingdoms%20AA%20Data%20Files/%{name}-%{version}.tar.bz2
-Requires:	%{name} >= %{version}
+Requires:	%{oname} >= %{version}
 BuildArch:	noarch
 
 %description
