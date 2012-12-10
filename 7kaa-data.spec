@@ -2,7 +2,7 @@
 
 Name:		%{oname}-data
 Version:	2.13
-Release:	%mkrel 1
+Release:	2
 Summary:	Game data files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	GPLv2
@@ -20,15 +20,17 @@ Game data files required to play Seven Kingdoms: Ancient Adversaries game.
 %build
 
 %install
-%__rm -rf %{buildroot}
-
-%__mkdir_p %{buildroot}%{_datadir}/%{oname}
-%__cp -r * %{buildroot}%{_datadir}/%{oname}/
-
-%clean
-%__rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_datadir}/%{oname}
+cp -r * %{buildroot}%{_datadir}/%{oname}/
 
 %files
 %doc COPYING README-GameData
 %{_datadir}/%{oname}
+
+
+
+%changelog
+* Fri Mar 23 2012 Andrey Bondrov <abondrov@mandriva.org> 2.13-1
++ Revision: 786273
+- imported package 7kaa-data
 
