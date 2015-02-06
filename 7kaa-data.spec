@@ -2,7 +2,7 @@
 
 Name:		%{oname}-data
 Version:	2.13
-Release:	2
+Release:	3
 Summary:	Game data files for Seven Kingdoms: Ancient Adversaries
 Group:		Games/Strategy
 License:	GPLv2
